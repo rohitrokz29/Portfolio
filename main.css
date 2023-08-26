@@ -1,0 +1,104 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.outer-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-navbar {
+    background-color: #fff;
+    height: 100vh;
+    position: sticky;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    text-align: center;
+    margin-block: 0.75rem;
+    margin-inline: 0.5rem;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.main-section {
+    width: 95vw;
+    background-color: #0a0909;
+    color: #fff;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.home .starting-state {
+    margin-top: 8rem;
+    margin-left: 5rem;
+}
+
+.starting-state .start {
+    font-size: 2rem;
+}
+
+.starting-state .name {
+    font-size: 3rem;
+    color: #07e1dd;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.starting-state .intro {
+    font-size: 1.5rem;
+}
+
+.starting-state .see-more {
+    padding-top: 3rem;
+    padding-inline: 1rem;
+    color: #ddddddd7;
+    cursor: pointer;
+}
+
+.starting-state .see-more:hover {
+    color: #ddd;
+}
+
+.porto-image {
+    place-self: center;
+    padding-left: 5rem;
+}
+
+.porto-image img {
+    border-radius: 50%;
+    filter: drop-shadow(0 0.25rem 0.25rem #dabebefb);
+}
+
+.ring {
+    position: relative;
+    top: -12rem;
+    left: -7rem;
+    width: 30rem;
+    height: 10rem;
+    border: 4px solid #fd2b2b;
+    border-radius: 50%;
+    rotate: 30deg;
+    border-style:groove;
+    border-top: 0px transparent;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-block-width: 4px;
+}
