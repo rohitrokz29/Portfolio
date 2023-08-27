@@ -14,7 +14,7 @@
     background-color: #fff;
     height: 100vh;
     position: sticky;
-    width: 4rem;
+    width: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,27 +24,45 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item {
     text-align: center;
     margin-block: 0.75rem;
-    margin-inline: 0.5rem;
-    line-height: 2rem;
+    padding-inline: 0.25rem;
+    width: 3rem;
+    line-height: 3rem;
     font-size: 1.25rem;
     cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    transition: all 0.5s ease-out;
+
+
+}
+
+.nav-item:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .main-section {
     width: 95vw;
     background-color: #0a0909;
     color: #fff;
+    overflow-x: auto;
+    height: 100vh;
+
 }
 
 .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+
 }
 
 .home .starting-state {
@@ -79,7 +97,7 @@
 
 .porto-image {
     place-self: center;
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 .porto-image img {
@@ -90,15 +108,33 @@
 .ring {
     position: relative;
     top: -12rem;
-    left: -7rem;
-    width: 30rem;
+    left: -4rem;
+    width: 26rem;
     height: 10rem;
     border: 4px solid #fd2b2b;
     border-radius: 50%;
-    rotate: 30deg;
-    border-style:groove;
-    border-top: 0px transparent;
-    border-left-width: 3px;
-    border-right-width: 3px;
-    border-block-width: 4px;
+    rotate: -30deg;
+    border-top: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 4px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-block: 1rem;
+}
+.heading .line{
+    border: 2px solid #fff;
+    width: 5rem;
+}
+.heading>span{
+    margin-inline: 1rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.heading span span{
+    color: #00ffff;
 }
