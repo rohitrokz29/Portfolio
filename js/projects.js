@@ -16,7 +16,7 @@ const createProjectList = async () => {
        }
         let node = document.createElement('li');
         node.classList.add("project-item");
-        node.style.backgroundImage=`url(../assets/${name}.png)`;
+        node.style.backgroundImage=`url(./assets/${name}.png)`;
         let projName=document.createElement('a');
         projName.innerText=name;
         projName.href=html_url;

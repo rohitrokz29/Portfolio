@@ -47,13 +47,14 @@
 .nav-item:hover {
     background-color: #000;
     color: #fff;
+    
 }
 
 .main-section {
     width: 95vw;
     background-color: #0a0909;
     color: #fff;
-    overflow-x: auto;
+    overflow-x: hidden;
     height: 100vh;
 
 }
@@ -76,7 +77,9 @@
 
 .starting-state .name {
     font-size: 3rem;
+    font-weight: normal;
     color: #07e1dd;
+    display: inline-block;
     font-family: 'Times New Roman', Times, serif;
 }
 

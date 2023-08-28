@@ -8,44 +8,49 @@
 }
 
 .project-item {
-    width : 20rem;
+    width: 20rem;
     height: 30vh;
     margin-inline: 2rem;
     margin-block: 2rem;
-    background-size:100%;
+    background-size: 100%;
 
 }
-.project-item div{
+
+.project-item div {
     width: 100%;
     height: 100%;
     padding-inline: 1rem;
-    background-color: #00000084;
+    background-color: #0000009b;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    outline: 2px solid #fff;
+    outline-offset: 3px;
     transition: all 0.5s ease-in-out;
 
 }
-.project-item a{
+
+.project-item a {
     color: #fff;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     line-height: 2rem;
     font-size: 1.5rem;
     transition: all 0.5s ease-in-out;
 
 }
-.project-item div span{
-    color: #ddd;
-    transition: all 0.5s ease-in-out;
+
+.project-item div span {
+    color: #fff;
+    transition: all 0.25s ease-in-out;
 
 }
-.project-item div:hover{
+
+.project-item div:hover>a,
+.project-item div:hover>span,
+.project-item div:hover {
     background: transparent;
-    &&>a,>span{
-        color: transparent;
-    }
+    color: transparent;
 
 }
-
