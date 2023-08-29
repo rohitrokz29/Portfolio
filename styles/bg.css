@@ -1,0 +1,28 @@
+.bg {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-color: #000;
+    padding-inline: 1rem;
+
+}
+
+.bg-ele {
+    width: 10rem;
+    border-width: 2px;
+    /* border: 2px solid #0f0f0f; */
+    background-color: #000;
+    height: 10rem;
+    padding: 0.5rem;
+    margin-block: 0.5rem;
+    rotate: 45deg;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-ele:hover {
+    background-color: #fff;
+}
