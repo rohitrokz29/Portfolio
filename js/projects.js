@@ -1,8 +1,7 @@
 const getProjects = async () => {
     let result = await fetch('https://api.github.com/users/rohitrokz29/repos')
         .then(res => res.json());
-    result.sort((a, b) => b.size - a.size)
-    console.log(result)
+    result.sort((a, b) => b.updated_at - a.updated_at)
     return result;
 }
 const createProjectList = async () => {
