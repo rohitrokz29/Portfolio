@@ -15,15 +15,10 @@
     width: 5rem;
     border-width: 2px;
     height: 5rem;
-    border-radius: 50%;
+    rotate: 45deg;
     padding: 0.5rem;
-    margin-block: 0.5rem;
-    margin-inline: 0.5rem;
-    filter: blur(10px);
-    transition: all 0.5s ease-in-out;
-    opacity: 0.2;
-}
-
-.bg-ele:hover {
-    background-color: #fff;
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    transition: all 0.8s ease-in-out;
+    opacity: 0.3;
 }

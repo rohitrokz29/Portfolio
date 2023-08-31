@@ -1,3 +1,4 @@
+const colors=["#00ecff","#726a00","#ff0000","#f500ff","#00ff05",]
 const setBackGround = () => {
     let bg_section = document.getElementById("bg");
     for (let i = 0; i < 120; i++) {
@@ -11,19 +12,18 @@ setBackGround();
 //random index generator
 const randomIndex = ({ max }) => Math.floor(Math.random() * max) + 1;
 
+//setting random border colors to the set background
 setInterval(() => {
 
     let randomSize = randomIndex({ max: 30 });
     for (let i = 0; i < randomSize; i++) {
         try {
-            let ele = document.getElementById(`${randomIndex({ max: 120 })}`);
-            // const randomColor = randomIndex({ max: 16777215 }).toString(16);
-            ele.style.backgroundColor = "#726a00";
-            // ele.style.backgroundColor = `#${randomColor}`;
+            let ele = document.getElementById(`${randomIndex({ max: 150 })-30}`);
+            ele.style.border = `2px solid ${colors.at(randomIndex({max:5}))}`;
 
             setTimeout(() => {
-                ele.style.backgroundColor = "transparent";
+                ele.style.border = " 2px solid transparent";
             }, 1000)
         } catch (error) {}
     }
-}, 1200);
+}, 900);
