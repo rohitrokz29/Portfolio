@@ -1,0 +1,38 @@
+.about{
+    margin-inline: 2rem;
+    padding-block: 1rem;
+}
+.about .overview{
+    max-width: 55vw;
+    line-height: 1.5rem;
+    color: #ddd;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-block: 4rem;
+}
+.skillCard{
+    min-width: 250px;
+    background-color: #231f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 280px;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 3px #7b7b7b; 
+    transition: all 0.5s ease-in-out ;
+}
+.skillCard img{
+    max-width: 6rem;
+}
+.skillCard span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.skillCard:hover{
+    box-shadow: 0px 0px 10px 4px #fff;
+}
