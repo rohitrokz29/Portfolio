@@ -1,19 +1,22 @@
-.about{
+.about {
     margin-inline: 2rem;
     padding-block: 1rem;
 }
-.about .overview{
+
+.about .overview {
     max-width: 55vw;
     line-height: 1.5rem;
     color: #ddd;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-block: 4rem;
 }
-.skillCard{
+
+.skillCard {
     min-width: 250px;
     background-color: #231f1f;
     display: flex;
@@ -23,16 +26,48 @@
     min-height: 280px;
     text-align: center;
     border-radius: 2rem;
-    box-shadow: 0px 0px 10px 3px #7b7b7b; 
-    transition: all 0.5s ease-in-out ;
+    box-shadow: 0px 0px 10px 3px #7b7b7b;
+    transition: all 0.5s ease-in-out;
 }
-.skillCard img{
+
+.skillCard img {
     max-width: 6rem;
 }
-.skillCard span{
+
+.skillCard span {
     font-size: 18px;
     font-weight: 700;
 }
-.skillCard:hover{
+
+.skillCard:hover {
     box-shadow: 0px 0px 10px 4px #fff;
+}
+
+.skill-list {
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+}
+
+.skill-title {
+    font-size: 1.3rem;
+    color: #ddd;
+    font-weight: 700;
+}
+
+#skillset {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+    background-color: #000000a6;
+}
+.skill{
+    margin: 2rem;
+    max-width: 100px;
+    height: 100px;
+    filter: grayscale(50%);
+     transition: all 0.5s ease-in-out ;
+    
+}
+.skill:hover{
+    filter: grayscale(0);
 }

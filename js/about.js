@@ -20,8 +20,14 @@ const setAbout = () => {
 }
 const setSkillList=()=>{
     let ele=document.getElementById("skillset")
-    const skillset=["JAVA","JS"]
-    
+    let img=["html","css","js","java","bulma","react","express","nodejs","npm","git","mysql","mongodb"]
+    img.map(item=>{
+        let node=document.createElement('img');
+        node.src=`./assets/skills/${item}.png`;
+        node.classList.add("skill");
+        node.alt=item;
+        ele.appendChild(node);
+    })
 }
 setAbout();
 setSkillList();
