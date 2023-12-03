@@ -2,7 +2,7 @@ const getProjects = async () => {
     try {
         let result = await fetch('https://api.github.com/users/rohitrokz29/repos')
             .then(res => res.json());
-        result.sort((a, b) => b.updated_at - a.updated_at)
+        result.sort((a, b) => b.size - a.size)
         return result;
     } catch (error) {
         return null;

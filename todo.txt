@@ -1,0 +1,6 @@
+nav items
+    home
+    about
+    projects
+    contacts
+    leave message
