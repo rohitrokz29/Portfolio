@@ -1,9 +1,12 @@
+const display=["hotel_website","Orbit_Connect","News_App","vigour-mania","health-association-react-js-app","Training-and-Placement-Cell-Demo-website"]
+
 const getProjects = async () => {
     try {
         let result = await fetch('https://api.github.com/users/rohitrokz29/repos')
             .then(res => res.json());
-        result.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-        return result;
+        let fin_result = result.filter(item => display.includes(item.name));
+        fin_result.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+        return fin_result;
     } catch (error) {
         return null;
     }
@@ -14,9 +17,6 @@ const createProjectList = async () => {
 
     projects?.map(item => {
         let { name, description, html_url } = item
-        if (name === "rohitrokz29" || name === "DSA") {
-            return;
-        }
         let node = document.createElement('li');
         node.classList.add("project-item");
         node.style.backgroundImage = `url(./assets/${name}.png)`;

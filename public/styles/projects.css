@@ -9,10 +9,11 @@
 
 .project-item {
     width: 20rem;
-    height: 30vh;
+    height: 25vh;
     margin-inline: 2rem;
     margin-block: 2rem;
     background-size: 100%;
+    background-repeat:no-repeat ;
 
 }
 

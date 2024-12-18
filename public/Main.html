@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kharche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/bg.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+</head>
+
+<body>
+    <section class="outer-section">
+
+        <div class="main-section bg" id="bg">
+
+        </div>
+        <nav class="side-navbar">
+            <ul class="nav-list">
+                <li class="nav-item" id="nav-home">
+                    <i class="fa fa-home"></i>
+                </li>
+                <li class="nav-item" id="nav-projects">
+                    <i class="fa-solid fa-list-check"></i>
+                </li>
+                <li class="nav-item" id="nav-info">
+                    <i class="fa-sharp fa-solid fa-info"></i>
+                </li>
+                <li class="nav-item" id="nav-contacts">
+                    <i class="fa-solid fa-globe"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-section">
+            <!-- Home  -->
+            <div class="home" id="home">
+                <div class="starting-state">
+                    <span class="start">
+                        Hi, I am
+                    </span>
+                    <h3 class="name">Rohit Kharche</h3>
+                    <br>
+                    <span class="intro">
+                        A Full Stack Web Developer
+                    </span>
+                    <div class="see-more" id="see-more">
+                        More About Me >
+
+                    </div>
+                </div>
+                <div class="porto-image">
+                    <img src="./assets//profile.png">
+                    <div class="ring"></div>
+                </div>
+            </div>
+            <!-- Information  -->
+            <div class="info" id="info">
+                <div class="heading">
+                    <div class="line"></div>
+                    <span>About <span>Me</span></span>
+                </div>
+                <div class="about">
+                    <div class="overview">
+                        I'm Rohit, a Chemical Engineering student at IIT Patna, set to graduate in 2025. Hailing from
+                        Maharashtra, I've mastered web development with the MERN stack and version control. My unique
+                        blend of engineering insights and web development skills allows me to create impactful web
+                        applications that solve real-world problems.
+                    </div>
+                    <div class="skills" id="skills">
+
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-title">
+                            My Skills & Technologies
+                        </div>
+                        <div class="skillset" id="skillset">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects  -->
+            <div class="projects" id="projects">
+                <div class="heading">
+                    <div class="line"></div>
+                    <span>Projects <span>&</span> Works</span>
+                </div>
+                <ul class="project-list" id="project-list">
+                </ul>
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="heading">
+                    <div class="line"></div>
+                    <span>Contact <span> Me</span></span>
+                </div>
+                <div class="container">
+
+                    <div action="" class="form">
+                        <h2>Fill out the form and message me!</h2>
+
+                        <input type="text" placeholder="Name" class="form__input" id="name" />
+                        <br>
+                        <input type="email" placeholder="Email" class="form__input" id="email" />
+                        <br>
+                        <input type="text" placeholder="Message" class="form__input" id="message" />
+                        <br>
+                        <button id="submit-form" type="submit">Send message</button>
+                        <br>
+                        <div class="status" id="status"></div>
+                    </div>
+                    <div class="cta-form">
+                        <h1>Or reach to me at</h1>
+                        <dic class="icons">
+                            <a href="https://github.com/rohitrokz29" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" id="github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/rohit-kharche-118286235/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin" style="color: #3c82fb;" id="linkedin"></i>
+                            </a>
+                            <a href="mailTo:r.s.kharche0098@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-regular fa-envelope" style="color: #b95f5f;" id="mail"></i>
+                            </a>
+                        </dic>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </main>
+    </section>
+
+</body>
+<script src="./js/projects.js"></script>
+<script src="./js//bg.js"></script>
+<script src="./js/about.js"></script>
+<script src="./js/events.js"></script>
+
+</html>
