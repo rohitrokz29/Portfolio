@@ -1,14 +1,13 @@
 const { google } = require('googleapis');
 require('dotenv').config();
 
-const serviceAccountKeyFile = "google-sheets-key.json";
 const sheetId = `${process.env.SHEET_ID}`;
 const tabName = 'Sheet1';
 const range = 'A1';
 
 async function _getGoogleSheetClient() {
     const auth = new google.auth.GoogleAuth({
-        keyFile: serviceAccountKeyFile,
+        credentials: require('./config'),
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
     const authClient = await auth.getClient();
